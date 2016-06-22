@@ -1,8 +1,8 @@
-/* The file syscall_table.c is auto generated. DO NOT EDIT, CHANGES WILL BE LOST. */
+/* The file frosted_syscalls.c is auto generated. DO NOT EDIT, CHANGES WILL BE LOST. */
 /* If you want to add syscalls, use syscall_table_gen.py  */
 
 #include <stdint.h>
-#include "syscall_table.h"
+#include "sys/frosted.h"
 /* Syscall: sleep(1 arguments) */
 int sys_sleep(uint32_t arg1){
     return syscall(SYS_SLEEP, arg1, 0, 0, 0, 0); 

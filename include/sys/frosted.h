@@ -1,4 +1,4 @@
-/* The file syscall_table.h is auto generated. DO NOT EDIT, CHANGES WILL BE LOST. */
+/* The file frosted.h is auto generated. DO NOT EDIT, CHANGES WILL BE LOST. */
 /* If you want to add syscalls, use syscall_table_gen.py  */
 
 #define SYS_SLEEP 			(0)
