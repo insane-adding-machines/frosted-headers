@@ -72,4 +72,5 @@
 #define SYS_READLINK 			(68)
 #define SYS_FCNTL 			(69)
 #define SYS_SETSID 			(70)
-#define _SYSCALLS_NR (71) /* We have 71 syscalls! */
+#define SYS_PTRACE 			(71)
+#define _SYSCALLS_NR (72) /* We have 72 syscalls! */
