@@ -363,3 +363,18 @@ int sys_ptrace(uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4){
     return syscall(SYS_PTRACE, arg1, arg2, arg3, arg4, 0); 
 }
 
+/* Syscall: reboot(0 arguments) */
+int sys_reboot(void){
+    return syscall(SYS_REBOOT, 0, 0, 0, 0, 0); 
+}
+
+/* Syscall: getpriority(2 arguments) */
+int sys_getpriority(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_GETPRIORITY, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: setpriority(3 arguments) */
+int sys_setpriority(uint32_t arg1, uint32_t arg2, uint32_t arg3){
+    return syscall(SYS_SETPRIORITY, arg1, arg2, arg3, 0,  0); 
+}
+

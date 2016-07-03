@@ -73,4 +73,7 @@
 #define SYS_FCNTL 			(69)
 #define SYS_SETSID 			(70)
 #define SYS_PTRACE 			(71)
-#define _SYSCALLS_NR (72) /* We have 72 syscalls! */
+#define SYS_REBOOT 			(72)
+#define SYS_GETPRIORITY 			(73)
+#define SYS_SETPRIORITY 			(74)
+#define _SYSCALLS_NR (75) /* We have 75 syscalls! */
