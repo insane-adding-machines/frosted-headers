@@ -12,6 +12,9 @@
 #define IOCTL_GPIO_SET_PULLUPDOWN 4
 #define IOCTL_GPIO_SET_ALT_FUNC 5
 #define IOCTL_GPIO_SET_TRIGGER  6
+/* GPIO mx */
+#define IOCTL_GPIOMX_DESTROY    0
+#define IOCTL_GPIOMX_CREATE     1
 
 /* IOCTL_GPIO_SET_TRIGGER Arguments: */
 #define GPIO_TRIGGER_NONE   ((uint32_t)0)
