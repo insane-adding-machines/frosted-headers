@@ -16,6 +16,17 @@
 #define IOCTL_GPIOMX_DESTROY    0
 #define IOCTL_GPIOMX_CREATE     1
 
+struct gpio_req {
+    uint32_t base;
+    uint32_t pin;
+    char *name;
+};
+
+/* IOCTL_GPIO_SET_PULLUPDOWN Arguments: */
+#define GPIO_PUPD_NONE       ((uint32_t)0)
+#define GPIO_PUPD_PULLUP     ((uint32_t)1)
+#define GPIO_PUPD_PULLDOWN   ((uint32_t)2)
+
 /* IOCTL_GPIO_SET_TRIGGER Arguments: */
 #define GPIO_TRIGGER_NONE   ((uint32_t)0)
 #define GPIO_TRIGGER_FALL   ((uint32_t)1)
