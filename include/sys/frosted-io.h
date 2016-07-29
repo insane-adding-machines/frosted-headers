@@ -23,9 +23,9 @@ struct gpio_req {
 };
 
 /* IOCTL_GPIO_SET_PULLUPDOWN Arguments: */
-#define GPIO_PUPD_NONE       ((uint32_t)0)
-#define GPIO_PUPD_PULLUP     ((uint32_t)1)
-#define GPIO_PUPD_PULLDOWN   ((uint32_t)2)
+#define IOCTL_GPIO_PUPD_NONE       ((uint32_t)0)
+#define IOCTL_GPIO_PUPD_PULLUP     ((uint32_t)1)
+#define IOCTL_GPIO_PUPD_PULLDOWN   ((uint32_t)2)
 
 /* IOCTL_GPIO_SET_TRIGGER Arguments: */
 #define GPIO_TRIGGER_NONE   ((uint32_t)0)
