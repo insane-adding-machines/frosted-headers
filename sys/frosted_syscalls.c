@@ -378,3 +378,13 @@ int sys_setpriority(uint32_t arg1, uint32_t arg2, uint32_t arg3){
     return syscall(SYS_SETPRIORITY, arg1, arg2, arg3, 0,  0); 
 }
 
+/* Syscall: ftruncate(2 arguments) */
+int sys_ftruncate(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_FTRUNCATE, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: truncate(2 arguments) */
+int sys_truncate(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_TRUNCATE, arg1, arg2, 0, 0, 0); 
+}
+

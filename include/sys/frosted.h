@@ -76,4 +76,6 @@
 #define SYS_REBOOT 			(72)
 #define SYS_GETPRIORITY 			(73)
 #define SYS_SETPRIORITY 			(74)
-#define _SYSCALLS_NR (75) /* We have 75 syscalls! */
+#define SYS_FTRUNCATE 			(75)
+#define SYS_TRUNCATE 			(76)
+#define _SYSCALLS_NR (77) /* We have 77 syscalls! */
