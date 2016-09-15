@@ -40,7 +40,7 @@ struct gpio_req {
 #define IOCTL_I2C_SET_SLAVE     1
 #define IOCTL_I2C_SET_ADDR7     2
 #define IOCTL_I2C_SET_ADDR10    3
-#define IOCTL_I2C_SET_ADDR7_2   4 
+#define IOCTL_I2C_SET_ADDR7_2   4
 #define IOCTL_I2C_SET_SPEED     5
 
 /****************************************/
@@ -74,7 +74,7 @@ struct gpio_req {
 #define SIOCSIFNAME	0x8923		/* set interface name */
 #define	SIOCSIFHWADDR	0x8924		/* set hardware address 	*/
 #define SIOCGIFENCAP	0x8925		/* get/set encapsulations       */
-#define SIOCSIFENCAP	0x8926		
+#define SIOCSIFENCAP	0x8926
 #define SIOCGIFHWADDR	0x8927		/* Get hardware address		*/
 #define SIOCGIFSLAVE	0x8929		/* Driver slaving support	*/
 #define SIOCSIFSLAVE	0x8930
@@ -101,6 +101,12 @@ struct gpio_req {
 /* LSM303DLHC */
 #define IOCTL_LSM303DLHC_WRITE_CTRL_REG     0
 #define IOCTL_LSM303DLHC_READ_CTRL_REG      1
+
+/****************************************/
+/****************************************/
+/* STMPE811 */
+#define IOCTL_STMPE811_WRITE_CTRL_REG     0
+#define IOCTL_STMPE811_READ_CTRL_REG      1
 
 /****************************************/
 /****************************************/
