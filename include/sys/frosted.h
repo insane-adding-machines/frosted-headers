@@ -80,4 +80,8 @@
 #define SYS_TRUNCATE 			(76)
 #define SYS_PTHREAD_CREATE 			(77)
 #define SYS_PTHREAD_EXIT 			(78)
-#define _SYSCALLS_NR (79) /* We have 79 syscalls! */
+#define SYS_PTHREAD_JOIN 			(79)
+#define SYS_PTHREAD_DETACH 			(80)
+#define SYS_PTHREAD_KILL 			(81)
+#define SYS_PTHREAD_SELF 			(82)
+#define _SYSCALLS_NR (83) /* We have 83 syscalls! */

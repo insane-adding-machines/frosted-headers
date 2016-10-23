@@ -398,3 +398,23 @@ int sys_pthread_exit(uint32_t arg1){
     return syscall(SYS_PTHREAD_EXIT, arg1, 0, 0, 0, 0); 
 }
 
+/* Syscall: pthread_join(2 arguments) */
+int sys_pthread_join(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_JOIN, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_detach(1 arguments) */
+int sys_pthread_detach(uint32_t arg1){
+    return syscall(SYS_PTHREAD_DETACH, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: pthread_kill(2 arguments) */
+int sys_pthread_kill(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_KILL, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_self(0 arguments) */
+int sys_pthread_self(void){
+    return syscall(SYS_PTHREAD_SELF, 0, 0, 0, 0, 0); 
+}
+
