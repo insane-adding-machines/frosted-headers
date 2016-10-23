@@ -78,4 +78,6 @@
 #define SYS_SETPRIORITY 			(74)
 #define SYS_FTRUNCATE 			(75)
 #define SYS_TRUNCATE 			(76)
-#define _SYSCALLS_NR (77) /* We have 77 syscalls! */
+#define SYS_PTHREAD_CREATE 			(77)
+#define SYS_PTHREAD_EXIT 			(78)
+#define _SYSCALLS_NR (79) /* We have 79 syscalls! */

@@ -388,3 +388,13 @@ int sys_truncate(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_TRUNCATE, arg1, arg2, 0, 0, 0); 
 }
 
+/* Syscall: pthread_create(4 arguments) */
+int sys_pthread_create(uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4){
+    return syscall(SYS_PTHREAD_CREATE, arg1, arg2, arg3, arg4, 0); 
+}
+
+/* Syscall: pthread_exit(1 arguments) */
+int sys_pthread_exit(uint32_t arg1){
+    return syscall(SYS_PTHREAD_EXIT, arg1, 0, 0, 0, 0); 
+}
+
