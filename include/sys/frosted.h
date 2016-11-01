@@ -82,6 +82,6 @@
 #define SYS_PTHREAD_EXIT 			(78)
 #define SYS_PTHREAD_JOIN 			(79)
 #define SYS_PTHREAD_DETACH 			(80)
-#define SYS_PTHREAD_KILL 			(81)
+#define SYS_PTHREAD_CANCEL 			(81)
 #define SYS_PTHREAD_SELF 			(82)
 #define _SYSCALLS_NR (83) /* We have 83 syscalls! */

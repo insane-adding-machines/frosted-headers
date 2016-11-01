@@ -408,9 +408,9 @@ int sys_pthread_detach(uint32_t arg1){
     return syscall(SYS_PTHREAD_DETACH, arg1, 0, 0, 0, 0); 
 }
 
-/* Syscall: pthread_kill(2 arguments) */
-int sys_pthread_kill(uint32_t arg1, uint32_t arg2){
-    return syscall(SYS_PTHREAD_KILL, arg1, arg2, 0, 0, 0); 
+/* Syscall: pthread_cancel(1 arguments) */
+int sys_pthread_cancel(uint32_t arg1){
+    return syscall(SYS_PTHREAD_CANCEL, arg1, 0, 0, 0, 0); 
 }
 
 /* Syscall: pthread_self(0 arguments) */
