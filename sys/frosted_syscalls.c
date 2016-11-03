@@ -418,3 +418,8 @@ int sys_pthread_self(void){
     return syscall(SYS_PTHREAD_SELF, 0, 0, 0, 0, 0); 
 }
 
+/* Syscall: pthread_setcancelstate(2 arguments) */
+int sys_pthread_setcancelstate(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_SETCANCELSTATE, arg1, arg2, 0, 0, 0); 
+}
+
