@@ -423,3 +423,8 @@ int sys_pthread_setcancelstate(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_PTHREAD_SETCANCELSTATE, arg1, arg2, 0, 0, 0); 
 }
 
+/* Syscall: sched_yield(0 arguments) */
+int sys_sched_yield(void){
+    return syscall(SYS_SCHED_YIELD, 0, 0, 0, 0, 0); 
+}
+

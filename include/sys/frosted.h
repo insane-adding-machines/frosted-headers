@@ -85,4 +85,5 @@
 #define SYS_PTHREAD_CANCEL 			(81)
 #define SYS_PTHREAD_SELF 			(82)
 #define SYS_PTHREAD_SETCANCELSTATE 			(83)
-#define _SYSCALLS_NR (84) /* We have 84 syscalls! */
+#define SYS_SCHED_YIELD 			(84)
+#define _SYSCALLS_NR (85) /* We have 85 syscalls! */
