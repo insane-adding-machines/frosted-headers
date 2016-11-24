@@ -86,4 +86,9 @@
 #define SYS_PTHREAD_SELF 			(82)
 #define SYS_PTHREAD_SETCANCELSTATE 			(83)
 #define SYS_SCHED_YIELD 			(84)
-#define _SYSCALLS_NR (85) /* We have 85 syscalls! */
+#define SYS_PTHREAD_MUTEX_INIT 			(85)
+#define SYS_PTHREAD_MUTEX_DESTROY 			(86)
+#define SYS_PTHREAD_MUTEX_LOCK 			(87)
+#define SYS_PTHREAD_MUTEX_TRYLOCK 			(88)
+#define SYS_PTHREAD_MUTEX_UNLOCK 			(89)
+#define _SYSCALLS_NR (90) /* We have 90 syscalls! */

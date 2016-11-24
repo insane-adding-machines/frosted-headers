@@ -428,3 +428,28 @@ int sys_sched_yield(void){
     return syscall(SYS_SCHED_YIELD, 0, 0, 0, 0, 0); 
 }
 
+/* Syscall: pthread_mutex_init(2 arguments) */
+int sys_pthread_mutex_init(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_MUTEX_INIT, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_mutex_destroy(1 arguments) */
+int sys_pthread_mutex_destroy(uint32_t arg1){
+    return syscall(SYS_PTHREAD_MUTEX_DESTROY, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: pthread_mutex_lock(1 arguments) */
+int sys_pthread_mutex_lock(uint32_t arg1){
+    return syscall(SYS_PTHREAD_MUTEX_LOCK, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: pthread_mutex_trylock(1 arguments) */
+int sys_pthread_mutex_trylock(uint32_t arg1){
+    return syscall(SYS_PTHREAD_MUTEX_TRYLOCK, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: pthread_mutex_unlock(1 arguments) */
+int sys_pthread_mutex_unlock(uint32_t arg1){
+    return syscall(SYS_PTHREAD_MUTEX_UNLOCK, arg1, 0, 0, 0, 0); 
+}
+
