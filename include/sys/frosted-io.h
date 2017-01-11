@@ -112,10 +112,40 @@ struct gpio_req {
 /****************************************/
 /* Framebuffer */
 #define IOCTL_FB_GET_VSCREENINFO     0x00
-#define IOCTL_FB_PUT_VSCREENINFO     0x01
-#define IOCTL_FB_GET_FSCREENINFO     0x02
+#define IOCTL_FB_GET_FSCREENINFO     IOCTL_FB_GET_VSCREENINFO
 #define IOCTL_FB_GETCMAP             0x04
 #define IOCTL_FB_PUTCMAP             0x05
+
+/* Possible fields for fb_*_screninfo type */
+
+#define FB_TYPE_PIXELMAP 0x00
+#define FB_TYPE_TEXT     0x01
+
+enum fb_pixel_format {
+    FB_PF_ARGB8888,
+    FB_PF_RGB888,
+    FB_PF_RGB565,
+    FB_PF_ARGB15555,
+    FB_PF_ARGB4444,
+    FB_PF_CMAP256
+};
+
+struct fb_var_screeninfo {
+    uint8_t type;
+    uint8_t *smem_start;
+    uint32_t smem_len;
+    uint32_t xres; /* visible resolution */
+    uint32_t yres;
+    uint32_t xoffset; /* offset from virtual to visible */
+    uint32_t yoffset; /* resolution */
+
+    uint32_t bits_per_pixel;
+    enum fb_pixel_format pixel_format;
+};
+
+#define fb_fix_screeninfo fb_var_screeninfo
+
+/* Terminal TIOCGWINSZ */
 struct winsize
 {
   unsigned short ws_row;	/* rows, in characters */
