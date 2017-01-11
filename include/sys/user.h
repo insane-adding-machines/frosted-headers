@@ -27,6 +27,7 @@ struct user {
     uint32_t    dsize; /* Data size, in bytes  */
     uint32_t    ssize; /* Stack size, in bytes */
     uint32_t    start_code; /* Init function */
+    uint32_t    start_data;
     uint32_t    start_stack;
     int32_t     signal;
     int32_t     reserved;
