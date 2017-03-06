@@ -3,9 +3,9 @@
 
 #include <stdint.h>
 #include "sys/frosted.h"
-/* Syscall: sleep(1 arguments) */
-int sys_sleep(uint32_t arg1){
-    return syscall(SYS_SLEEP, arg1, 0, 0, 0, 0); 
+/* Syscall: sleep(2 arguments) */
+int sys_sleep(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_SLEEP, arg1, arg2, 0, 0, 0); 
 }
 
 /* Syscall: suspend(1 arguments) */
