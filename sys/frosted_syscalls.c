@@ -138,9 +138,9 @@ int sys_sem_post(uint32_t arg1){
     return syscall(SYS_SEM_POST, arg1, 0, 0, 0, 0); 
 }
 
-/* Syscall: sem_wait(1 arguments) */
-int sys_sem_wait(uint32_t arg1){
-    return syscall(SYS_SEM_WAIT, arg1, 0, 0, 0, 0); 
+/* Syscall: sem_wait(2 arguments) */
+int sys_sem_wait(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_SEM_WAIT, arg1, arg2, 0, 0, 0); 
 }
 
 /* Syscall: sem_trywait(1 arguments) */
