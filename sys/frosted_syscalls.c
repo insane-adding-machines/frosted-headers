@@ -143,6 +143,11 @@ int sys_sem_wait(uint32_t arg1){
     return syscall(SYS_SEM_WAIT, arg1, 0, 0, 0, 0); 
 }
 
+/* Syscall: sem_trywait(1 arguments) */
+int sys_sem_trywait(uint32_t arg1){
+    return syscall(SYS_SEM_TRYWAIT, arg1, 0, 0, 0, 0); 
+}
+
 /* Syscall: sem_destroy(1 arguments) */
 int sys_sem_destroy(uint32_t arg1){
     return syscall(SYS_SEM_DESTROY, arg1, 0, 0, 0, 0); 
