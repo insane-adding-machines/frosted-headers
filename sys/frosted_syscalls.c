@@ -128,9 +128,9 @@ int sys_getcwd(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_GETCWD, arg1, arg2, 0, 0, 0); 
 }
 
-/* Syscall: sem_init(1 arguments) */
-int sys_sem_init(uint32_t arg1){
-    return syscall(SYS_SEM_INIT, arg1, 0, 0, 0, 0); 
+/* Syscall: sem_init(2 arguments) */
+int sys_sem_init(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_SEM_INIT, arg1, arg2, 0, 0, 0); 
 }
 
 /* Syscall: sem_post(1 arguments) */
