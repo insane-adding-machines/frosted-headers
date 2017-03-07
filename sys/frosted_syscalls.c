@@ -458,3 +458,8 @@ int sys_pthread_mutex_unlock(uint32_t arg1){
     return syscall(SYS_PTHREAD_MUTEX_UNLOCK, arg1, 0, 0, 0, 0); 
 }
 
+/* Syscall: pthread_kill(2 arguments) */
+int sys_pthread_kill(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_KILL, arg1, arg2, 0, 0, 0); 
+}
+

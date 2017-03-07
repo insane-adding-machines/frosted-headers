@@ -92,4 +92,5 @@
 #define SYS_PTHREAD_MUTEX_LOCK 			(88)
 #define SYS_PTHREAD_MUTEX_TRYLOCK 			(89)
 #define SYS_PTHREAD_MUTEX_UNLOCK 			(90)
-#define _SYSCALLS_NR (91) /* We have 91 syscalls! */
+#define SYS_PTHREAD_KILL 			(91)
+#define _SYSCALLS_NR (92) /* We have 92 syscalls! */
