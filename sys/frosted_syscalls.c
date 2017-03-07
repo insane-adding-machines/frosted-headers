@@ -138,9 +138,14 @@ int sys_sem_post(uint32_t arg1){
     return syscall(SYS_SEM_POST, arg1, 0, 0, 0, 0); 
 }
 
-/* Syscall: sem_wait(1 arguments) */
-int sys_sem_wait(uint32_t arg1){
-    return syscall(SYS_SEM_WAIT, arg1, 0, 0, 0, 0); 
+/* Syscall: sem_wait(2 arguments) */
+int sys_sem_wait(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_SEM_WAIT, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: sem_trywait(1 arguments) */
+int sys_sem_trywait(uint32_t arg1){
+    return syscall(SYS_SEM_TRYWAIT, arg1, 0, 0, 0, 0); 
 }
 
 /* Syscall: sem_destroy(1 arguments) */
@@ -451,5 +456,15 @@ int sys_pthread_mutex_trylock(uint32_t arg1){
 /* Syscall: pthread_mutex_unlock(1 arguments) */
 int sys_pthread_mutex_unlock(uint32_t arg1){
     return syscall(SYS_PTHREAD_MUTEX_UNLOCK, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: pthread_kill(2 arguments) */
+int sys_pthread_kill(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_KILL, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: clock_settime(1 arguments) */
+int sys_clock_settime(uint32_t arg1){
+    return syscall(SYS_CLOCK_SETTIME, arg1, 0, 0, 0, 0); 
 }
 
