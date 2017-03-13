@@ -58,6 +58,11 @@ int sys_unlink(uint32_t arg1){
     return syscall(SYS_UNLINK, arg1, 0, 0, 0, 0); 
 }
 
+/* Syscall: gettimeofday(1 arguments) */
+int sys_gettimeofday(uint32_t arg1){
+    return syscall(SYS_GETTIMEOFDAY, arg1, 0, 0, 0, 0); 
+}
+
 /* Syscall: malloc(1 arguments) */
 int sys_malloc(uint32_t arg1){
     return syscall(SYS_MALLOC, arg1, 0, 0, 0, 0); 
@@ -458,13 +463,23 @@ int sys_pthread_kill(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_PTHREAD_KILL, arg1, arg2, 0, 0, 0); 
 }
 
-/* Syscall: clock_settime(2 arguments) */
-int sys_clock_settime(uint32_t arg1, uint32_t arg2){
-    return syscall(SYS_CLOCK_SETTIME, arg1, arg2, 0, 0, 0); 
+/* Syscall: clock_settime(1 arguments) */
+int sys_clock_settime(uint32_t arg1){
+    return syscall(SYS_CLOCK_SETTIME, arg1, 0, 0, 0, 0); 
 }
 
-/* Syscall: clock_gettime(2 arguments) */
-int sys_clock_gettime(uint32_t arg1, uint32_t arg2){
-    return syscall(SYS_CLOCK_GETTIME, arg1, arg2, 0, 0, 0); 
+/* Syscall: pthread_key_create(2 arguments) */
+int sys_pthread_key_create(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_KEY_CREATE, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_setspecific(2 arguments) */
+int sys_pthread_setspecific(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_SETSPECIFIC, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_getspecific(2 arguments) */
+int sys_pthread_getspecific(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_GETSPECIFIC, arg1, arg2, 0, 0, 0); 
 }
 
