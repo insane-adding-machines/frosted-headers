@@ -468,3 +468,18 @@ int sys_clock_gettime(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_CLOCK_GETTIME, arg1, arg2, 0, 0, 0); 
 }
 
+/* Syscall: pthread_key_create(2 arguments) */
+int sys_pthread_key_create(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_KEY_CREATE, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_setspecific(2 arguments) */
+int sys_pthread_setspecific(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_SETSPECIFIC, arg1, arg2, 0, 0, 0); 
+}
+
+/* Syscall: pthread_getspecific(2 arguments) */
+int sys_pthread_getspecific(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_PTHREAD_GETSPECIFIC, arg1, arg2, 0, 0, 0); 
+}
+

@@ -94,4 +94,7 @@
 #define SYS_PTHREAD_KILL 			(90)
 #define SYS_CLOCK_SETTIME 			(91)
 #define SYS_CLOCK_GETTIME 			(92)
-#define _SYSCALLS_NR (93) /* We have 93 syscalls! */
+#define SYS_PTHREAD_KEY_CREATE 			(93)
+#define SYS_PTHREAD_SETSPECIFIC 			(94)
+#define SYS_PTHREAD_GETSPECIFIC 			(95)
+#define _SYSCALLS_NR (96) /* We have 96 syscalls! */
