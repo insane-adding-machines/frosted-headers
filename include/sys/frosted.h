@@ -97,4 +97,6 @@
 #define SYS_PTHREAD_KEY_CREATE 			(93)
 #define SYS_PTHREAD_SETSPECIFIC 			(94)
 #define SYS_PTHREAD_GETSPECIFIC 			(95)
-#define _SYSCALLS_NR (96) /* We have 96 syscalls! */
+#define SYS_ALARM 			(96)
+#define SYS_UALARM 			(97)
+#define _SYSCALLS_NR (98) /* We have 98 syscalls! */

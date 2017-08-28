@@ -483,3 +483,13 @@ int sys_pthread_getspecific(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_PTHREAD_GETSPECIFIC, arg1, arg2, 0, 0, 0); 
 }
 
+/* Syscall: alarm(1 arguments) */
+int sys_alarm(uint32_t arg1){
+    return syscall(SYS_ALARM, arg1, 0, 0, 0, 0); 
+}
+
+/* Syscall: ualarm(2 arguments) */
+int sys_ualarm(uint32_t arg1, uint32_t arg2){
+    return syscall(SYS_UALARM, arg1, arg2, 0, 0, 0); 
+}
+
