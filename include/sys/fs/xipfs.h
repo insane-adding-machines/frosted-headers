@@ -1,6 +1,8 @@
 #ifndef XIPFS_INCLUDED
 #define XIPFS_INCLUDED
 #define XIPFS_MAGIC 0xC519FF55
+#define XIPFS_MAGIC_ICELINK 0xC519114c
+
 
 #include <stdint.h>
 
