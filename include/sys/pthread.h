@@ -3,6 +3,9 @@
 #include <stdint.h>
 #include <sys/types.h>
 typedef uint32_t pthread_t;
+typedef uint32_t pthread_attr_t;
+typedef void *pthread_mutex_t;
+typedef uint32_t pthread_mutexattr_t;
 typedef uint32_t pthread_key_t;
 
 #define PTHREAD_CREATE_JOINABLE (0)
