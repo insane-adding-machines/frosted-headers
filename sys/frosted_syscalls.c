@@ -498,3 +498,8 @@ int sys_standby(uint32_t arg1){
     return syscall(SYS_STANDBY, arg1, 0, 0, 0, 0); 
 }
 
+/* Syscall: ptsname(3 arguments) */
+int sys_ptsname(uint32_t arg1, uint32_t arg2, uint32_t arg3){
+    return syscall(SYS_PTSNAME, arg1, arg2, arg3, 0,  0); 
+}
+

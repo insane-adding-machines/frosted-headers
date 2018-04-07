@@ -100,4 +100,5 @@
 #define SYS_ALARM 			(96)
 #define SYS_UALARM 			(97)
 #define SYS_STANDBY 			(98)
-#define _SYSCALLS_NR (99) /* We have 99 syscalls! */
+#define SYS_PTSNAME 			(99)
+#define _SYSCALLS_NR (100) /* We have 100 syscalls! */
