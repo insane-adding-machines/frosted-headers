@@ -493,3 +493,8 @@ int sys_ualarm(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_UALARM, arg1, arg2, 0, 0, 0); 
 }
 
+/* Syscall: standby(1 arguments) */
+int sys_standby(uint32_t arg1){
+    return syscall(SYS_STANDBY, arg1, 0, 0, 0, 0); 
+}
+

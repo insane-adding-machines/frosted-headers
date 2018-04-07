@@ -99,4 +99,5 @@
 #define SYS_PTHREAD_GETSPECIFIC 			(95)
 #define SYS_ALARM 			(96)
 #define SYS_UALARM 			(97)
-#define _SYSCALLS_NR (98) /* We have 98 syscalls! */
+#define SYS_STANDBY 			(98)
+#define _SYSCALLS_NR (99) /* We have 99 syscalls! */

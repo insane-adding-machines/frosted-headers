@@ -1,6 +1,8 @@
 #ifndef INC_FROSTED_IO
 #define INC_FROSTED_IO
 
+/* Lowpower/reboot flag */
+#define SYS_FROSTED_FADEOFF 0xFADE0FFF
 
 /****************************************/
 /****************************************/
