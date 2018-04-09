@@ -4,6 +4,11 @@
 /* Lowpower/reboot flag */
 #define SYS_FROSTED_FADEOFF 0xFADE0FFF
 
+/* Reboot cmds */
+#define RB_STANDBY 0
+#define RB_SUSPEND 4
+#define RB_REBOOT  6
+
 /****************************************/
 /****************************************/
 /* GPIO */
