@@ -2,7 +2,7 @@
 /* If you want to add syscalls, use syscall_table_gen.py  */
 
 #define SYS_SLEEP 			(0)
-#define SYS_SUSPEND 			(1)
+#define SYS_PTSNAME 			(1)
 #define SYS_GETPID 			(2)
 #define SYS_GETPPID 			(3)
 #define SYS_OPEN 			(4)
@@ -99,6 +99,4 @@
 #define SYS_PTHREAD_GETSPECIFIC 			(95)
 #define SYS_ALARM 			(96)
 #define SYS_UALARM 			(97)
-#define SYS_STANDBY 			(98)
-#define SYS_PTSNAME 			(99)
-#define _SYSCALLS_NR (100) /* We have 100 syscalls! */
+#define _SYSCALLS_NR (98) /* We have 98 syscalls! */

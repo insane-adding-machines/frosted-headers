@@ -8,9 +8,9 @@ int sys_sleep(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_SLEEP, arg1, arg2, 0, 0, 0); 
 }
 
-/* Syscall: suspend(1 arguments) */
-int sys_suspend(uint32_t arg1){
-    return syscall(SYS_SUSPEND, arg1, 0, 0, 0, 0); 
+/* Syscall: ptsname(3 arguments) */
+int sys_ptsname(uint32_t arg1, uint32_t arg2, uint32_t arg3){
+    return syscall(SYS_PTSNAME, arg1, arg2, arg3, 0,  0); 
 }
 
 /* Syscall: getpid(0 arguments) */
@@ -363,9 +363,9 @@ int sys_ptrace(uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4){
     return syscall(SYS_PTRACE, arg1, arg2, arg3, arg4, 0); 
 }
 
-/* Syscall: reboot(0 arguments) */
-int sys_reboot(void){
-    return syscall(SYS_REBOOT, 0, 0, 0, 0, 0); 
+/* Syscall: reboot(3 arguments) */
+int sys_reboot(uint32_t arg1, uint32_t arg2, uint32_t arg3){
+    return syscall(SYS_REBOOT, arg1, arg2, arg3, 0,  0); 
 }
 
 /* Syscall: getpriority(2 arguments) */
@@ -491,15 +491,5 @@ int sys_alarm(uint32_t arg1){
 /* Syscall: ualarm(2 arguments) */
 int sys_ualarm(uint32_t arg1, uint32_t arg2){
     return syscall(SYS_UALARM, arg1, arg2, 0, 0, 0); 
-}
-
-/* Syscall: standby(1 arguments) */
-int sys_standby(uint32_t arg1){
-    return syscall(SYS_STANDBY, arg1, 0, 0, 0, 0); 
-}
-
-/* Syscall: ptsname(3 arguments) */
-int sys_ptsname(uint32_t arg1, uint32_t arg2, uint32_t arg3){
-    return syscall(SYS_PTSNAME, arg1, arg2, arg3, 0,  0); 
 }
 
